@@ -8,6 +8,10 @@ export function FunctionalRocket() {
 }
 
 export class ClassRocket extends Component {
+  //shouldComponentUpdate returning false avoids rerendering, and with it the rockets launch
+  shouldComponentUpdate(){
+    return false;
+  }
   constructor() {
     super();
 
